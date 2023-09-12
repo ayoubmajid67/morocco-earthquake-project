@@ -74,7 +74,9 @@ function fetchAndUpdateData() {
         .then(data => {
             // Update the HTML elements with JSON data
             deathNumber.innerText = data.death;
+           console.log( data.death); 
             injuredNumber.innerText = data.injured;
+          console.log(data.injured); 
         })
         .catch(error => {
             console.error('Error fetching JSON data:', error);
