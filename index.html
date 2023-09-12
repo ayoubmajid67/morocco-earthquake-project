@@ -69,7 +69,7 @@ const injuredNumber = document.getElementById('injured-number');
 
 function fetchAndUpdateData() {
     // Fetch the JSON data from the server with a unique URL
-    fetch(`https://maeq-tracker.rocmine.net/api/numbers.json?${Date.now()}`)
+    fetch(`https://apimaeqtracker.rocmine.net/api/numbers.json?${Date.now()}`)
         .then(response => response.json())
         .then(data => {
             // Update the HTML elements with JSON data
